@@ -16,45 +16,45 @@
   --engage-blue: #1E88E5;
   --engage-blue-light: #42A5F5;
   --engage-blue-dark: #1565C0;
-  
+
   /* Gradients */
   --gradient-primary: linear-gradient(135deg, var(--engage-green) 0%, var(--engage-blue) 100%);
   --gradient-hero: linear-gradient(135deg, #0A1628 0%, #1A2B45 50%, #0F1F35 100%);
-  --gradient-card: linear-gradient(145deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+  --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
   --gradient-text: linear-gradient(90deg, var(--engage-green) 0%, var(--engage-blue) 100%);
-  
+
   /* Background Colors */
   --bg-dark: #0A1628;
   --bg-dark-secondary: #111D33;
   --bg-light: #F8FAFB;
   --bg-white: #FFFFFF;
-  
+
   /* Text Colors */
   --text-white: #FFFFFF;
   --text-light: #B8C5D6;
   --text-dark: #1A1A2E;
   --text-muted: #6B7A8F;
-  
+
   /* Effects */
   --glass-bg: rgba(255, 255, 255, 0.08);
   --glass-border: rgba(255, 255, 255, 0.12);
   --shadow-soft: 0 4px 24px rgba(0, 0, 0, 0.12);
   --shadow-glow-green: 0 0 40px rgba(0, 166, 81, 0.3);
   --shadow-glow-blue: 0 0 40px rgba(30, 136, 229, 0.3);
-  
+
   /* Typography */
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
-  
+
   /* Spacing */
   --section-padding: 100px;
   --container-max: 1200px;
-  
+
   /* Transitions */
   --transition-fast: 0.2s ease;
   --transition-medium: 0.3s ease;
   --transition-slow: 0.5s ease;
-  
+
   /* Border Radius */
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -80,8 +80,8 @@ html {
 
 body {
   font-family: var(--font-body);
-  background-color: var(--bg-dark);
-  color: var(--text-white);
+  background-color: var(--bg-white);
+  color: var(--text-dark);
   line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -91,7 +91,12 @@ body {
 /* ============================================
    Typography
    ============================================ */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.2;
@@ -238,6 +243,7 @@ a {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -266,6 +272,7 @@ a {
     opacity: 0;
     transform: translateY(40px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -277,9 +284,12 @@ a {
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }
@@ -293,9 +303,12 @@ a {
    Pulse Animation
    ============================================ */
 @keyframes pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.6;
   }
@@ -327,12 +340,19 @@ a {
    Scroll Indicator
    ============================================ */
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-10px);
   }
+
   60% {
     transform: translateY(-5px);
   }
@@ -349,12 +369,12 @@ a {
   :root {
     --section-padding: 60px;
   }
-  
+
   .btn {
     padding: 12px 24px;
     font-size: 0.9rem;
   }
-  
+
   .glass-card {
     padding: 24px;
   }
@@ -376,7 +396,7 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg-dark);
+  background: #F8FAFB;
 }
 
 ::-webkit-scrollbar-thumb {

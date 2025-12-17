@@ -1,7 +1,7 @@
 .footer {
     padding: 80px 0 40px;
-    background: #070E1A;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background: #F8FAFB;
+    border-top: 1px solid #E8EEF3;
 }
 
 .container {
@@ -15,7 +15,7 @@
     grid-template-columns: 1.5fr 2fr;
     gap: 80px;
     padding-bottom: 60px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid #E0E8EF;
 }
 
 /* Brand */
@@ -45,13 +45,13 @@
     font-family: 'Outfit', sans-serif;
     font-size: 1.1rem;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.6);
+    color: #6B7A8F;
     font-style: italic;
 }
 
 .tagline {
     font-size: 0.95rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: #6B7A8F;
     line-height: 1.7;
     margin-bottom: 24px;
 }
@@ -68,10 +68,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #FFFFFF;
+    border: 1px solid #E0E8EF;
     border-radius: 10px;
-    color: rgba(255, 255, 255, 0.6);
+    color: #5A6A7A;
     transition: all 0.3s ease;
 }
 
@@ -97,7 +97,7 @@
 .linkTitle {
     font-size: 0.9rem;
     font-weight: 600;
-    color: #fff;
+    color: #1A1A2E;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -114,7 +114,7 @@
 
 .linkList li a {
     font-size: 0.95rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: #6B7A8F;
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -134,12 +134,12 @@
 
 .copyright {
     font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.4);
+    color: #6B7A8F;
 }
 
 .madeWith {
     font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.4);
+    color: #6B7A8F;
 }
 
 /* Responsive */
