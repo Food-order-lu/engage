@@ -27,8 +27,9 @@
 /* Logo */
 .logo {
     display: flex;
-    align-items: baseline;
-    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
     text-decoration: none;
 }
 
@@ -45,10 +46,11 @@
 
 .logoSlogan {
     font-family: 'Outfit', sans-serif;
-    font-size: 1.2rem;
+    font-size: 0.7rem;
     font-weight: 500;
     color: #6B7A8F;
-    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /* Nav Links */

@@ -34,7 +34,7 @@ const Navbar = () => {
             <div className={styles.container}>
                 <a href="#accueil" className={styles.logo}>
                     <span className={styles.logoText}>Engage</span>
-                    <span className={styles.logoSlogan}>you.</span>
+                    <span className={styles.logoSlogan}>face to face marketing</span>
                 </a>
 
                 <div className={styles.navLinks}>

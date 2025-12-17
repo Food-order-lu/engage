@@ -32,11 +32,11 @@ const Footer = () => {
                     <div className={styles.brand}>
                         <a href="#accueil" className={styles.logo}>
                             <span className={styles.logoText}>Engage</span>
-                            <span className={styles.logoSlogan}>you.</span>
+                            <span className={styles.logoSlogan}>face to face marketing</span>
                         </a>
                         <p className={styles.tagline}>
                             La plus grande agence de marketing face-to-face au Luxembourg.
-                            Nous engageons pour inspirer.
+                            We engage to inspire.
                         </p>
                         <div className={styles.socials}>
                             <a href="#" className={styles.socialLink} aria-label="LinkedIn">
