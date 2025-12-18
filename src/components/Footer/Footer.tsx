@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import styles from './Footer.module.css';
 
 const Footer = () => {
@@ -7,13 +8,13 @@ const Footer = () => {
 
     const footerLinks = {
         company: [
-            { label: 'À propos', href: '#about' },
-            { label: 'Services', href: '#services' },
-            { label: 'Partenaires', href: '#partners' },
-            { label: 'Carrières', href: '#careers' },
+            { label: 'À propos', href: '/about' },
+            { label: 'Services', href: '/services' },
+            { label: 'Partenaires', href: '/partners' },
+            { label: 'Carrières', href: '/careers' },
         ],
         support: [
-            { label: 'Contact', href: '#contact' },
+            { label: 'Contact', href: '/contact' },
             { label: 'FAQ', href: '#' },
             { label: 'Aide', href: '#' },
         ],
@@ -30,10 +31,10 @@ const Footer = () => {
                 <div className={styles.top}>
                     {/* Brand */}
                     <div className={styles.brand}>
-                        <a href="#accueil" className={styles.logo}>
+                        <Link href="/" className={styles.logo}>
                             <span className={styles.logoText}>Engage</span>
                             <span className={styles.logoSlogan}>face to face marketing</span>
-                        </a>
+                        </Link>
                         <p className={styles.tagline}>
                             La plus grande agence de marketing face-to-face au Luxembourg.
                             We engage to inspire.
@@ -64,7 +65,7 @@ const Footer = () => {
                             <ul className={styles.linkList}>
                                 {footerLinks.company.map((link, index) => (
                                     <li key={index}>
-                                        <a href={link.href}>{link.label}</a>
+                                        <Link href={link.href}>{link.label}</Link>
                                     </li>
                                 ))}
                             </ul>
@@ -74,7 +75,7 @@ const Footer = () => {
                             <ul className={styles.linkList}>
                                 {footerLinks.support.map((link, index) => (
                                     <li key={index}>
-                                        <a href={link.href}>{link.label}</a>
+                                        <Link href={link.href}>{link.label}</Link>
                                     </li>
                                 ))}
                             </ul>
@@ -84,7 +85,7 @@ const Footer = () => {
                             <ul className={styles.linkList}>
                                 {footerLinks.legal.map((link, index) => (
                                     <li key={index}>
-                                        <a href={link.href}>{link.label}</a>
+                                        <Link href={link.href}>{link.label}</Link>
                                     </li>
                                 ))}
                             </ul>

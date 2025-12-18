@@ -85,7 +85,7 @@
     right: 0;
     overflow: hidden;
     z-index: 2;
-    opacity: 0.08;
+    opacity: 0.18;
 }
 
 .marqueeTop {
@@ -136,7 +136,7 @@
     font-size: clamp(3rem, 8vw, 8rem);
     font-weight: 900;
     color: transparent;
-    -webkit-text-stroke: 2px rgba(0, 166, 81, 0.3);
+    -webkit-text-stroke: 3px rgba(0, 166, 81, 0.5);
     letter-spacing: 0.05em;
     padding-right: 20px;
 }

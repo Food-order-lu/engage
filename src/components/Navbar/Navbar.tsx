@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
@@ -17,12 +18,12 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { href: '#accueil', label: 'Accueil' },
-        { href: '#about', label: 'À propos' },
-        { href: '#services', label: 'Services' },
-        { href: '#partners', label: 'Partenaires' },
-        { href: '#careers', label: 'Carrières' },
-        { href: '#contact', label: 'Contact' },
+        { href: '/', label: 'Accueil' },
+        { href: '/about', label: 'À propos' },
+        { href: '/services', label: 'Services' },
+        { href: '/partners', label: 'Partenaires' },
+        { href: '/careers', label: 'Carrières' },
+        { href: '/contact', label: 'Contact' },
     ];
 
     const handleNavClick = () => {
@@ -32,22 +33,22 @@ const Navbar = () => {
     return (
         <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
             <div className={styles.container}>
-                <a href="#accueil" className={styles.logo}>
+                <Link href="/" className={styles.logo}>
                     <span className={styles.logoText}>Engage</span>
                     <span className={styles.logoSlogan}>face to face marketing</span>
-                </a>
+                </Link>
 
                 <div className={styles.navLinks}>
                     {navLinks.map((link) => (
-                        <a key={link.href} href={link.href} className={styles.navLink}>
+                        <Link key={link.href} href={link.href} className={styles.navLink}>
                             {link.label}
-                        </a>
+                        </Link>
                     ))}
                 </div>
 
-                <a href="#careers" className={styles.ctaButton}>
+                <Link href="/careers" className={styles.ctaButton}>
                     Rejoignez-nous
-                </a>
+                </Link>
 
                 <button
                     className={`${styles.mobileMenuBtn} ${isMobileMenuOpen ? styles.open : ''}`}
@@ -63,18 +64,18 @@ const Navbar = () => {
             {/* Mobile Menu */}
             <div className={`${styles.mobileMenu} ${isMobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
                 {navLinks.map((link) => (
-                    <a
+                    <Link
                         key={link.href}
                         href={link.href}
                         className={styles.mobileNavLink}
                         onClick={handleNavClick}
                     >
                         {link.label}
-                    </a>
+                    </Link>
                 ))}
-                <a href="#careers" className={styles.mobileCta} onClick={handleNavClick}>
+                <Link href="/careers" className={styles.mobileCta} onClick={handleNavClick}>
                     Rejoignez-nous
-                </a>
+                </Link>
             </div>
         </nav>
     );
