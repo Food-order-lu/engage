@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar/Navbar';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import WhyJoinUs from '@/components/WhyJoinUs/WhyJoinUs';
+import ApplicationForm from '@/components/ApplicationForm/ApplicationForm';
 import Footer from '@/components/Footer/Footer';
 
 export const metadata = {
@@ -18,6 +19,7 @@ export default function CareersPage() {
                 breadcrumb="Carrières"
             />
             <WhyJoinUs />
+            <ApplicationForm />
             <Footer />
         </>
     );
