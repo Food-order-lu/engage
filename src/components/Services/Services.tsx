@@ -1,32 +1,39 @@
 'use client';
 
+import Link from 'next/link';
 import styles from './Services.module.css';
 
 const Services = () => {
     const services = [
         {
-            icon: '🚪',
-            title: 'Porte-à-porte',
-            description: 'Campagnes de sensibilisation et de recrutement de donateurs directement au domicile des particuliers.',
-            features: ['Équipes formées', 'Scripts personnalisés', 'Suivi en temps réel']
+            title: 'Pour les ONG & Associations',
+            description: 'Recrutez des donateurs réguliers qui soutiennent votre cause sur le long terme.',
+            offerings: [
+                'Recrutement de donateurs mensuels en porte-à-porte',
+                'Campagnes de sensibilisation ciblées',
+                'Formation et scripts adaptés à votre mission'
+            ],
+            result: 'Résultat : fidélisation moyenne de 85% après 1 an'
         },
         {
-            icon: '🤝',
-            title: 'Partenariats Associations',
-            description: 'Nous collaborons avec des associations pour développer leur base de soutien et maximiser leur impact.',
-            features: ['Stratégie sur mesure', 'Reporting détaillé', 'ROI optimisé']
+            title: 'Pour les Entreprises',
+            description: 'Touchez vos clients potentiels directement, sans intermédiaire digital.',
+            offerings: [
+                'Prospection B2C terrain',
+                'Acquisition de leads qualifiés',
+                'Promotion de produits et services'
+            ],
+            result: 'Résultat : taux de conversion supérieur au télémarketing'
         },
         {
-            icon: '📢',
-            title: 'Street Marketing',
-            description: 'Présence dans les lieux publics stratégiques pour toucher un maximum de personnes et créer l\'engagement.',
-            features: ['Emplacements premium', 'Brand ambassadors', 'Activation événementielle']
-        },
-        {
-            icon: '📊',
-            title: 'Gestion de Campagnes',
-            description: 'Planification, exécution et analyse complète de vos campagnes de marketing terrain.',
-            features: ['Dashboard analytics', 'Optimisation continue', 'Support dédié']
+            title: 'Pour les Institutions',
+            description: 'Informez et mobilisez les citoyens sur vos initiatives publiques.',
+            offerings: [
+                'Campagnes d\'information citoyenne',
+                'Collecte de signatures et pétitions',
+                'Sensibilisation sur des thématiques sociales'
+            ],
+            result: 'Résultat : participation citoyenne mesurable'
         }
     ];
 
@@ -36,42 +43,77 @@ const Services = () => {
                 <div className={styles.header}>
                     <span className={styles.label}>Nos Services</span>
                     <h2 className={styles.title}>
-                        Ce que nous <span className={styles.highlight}>faisons</span>
+                        Comment nous <span className={styles.highlight}>aidons</span>
                     </h2>
                     <p className={styles.subtitle}>
-                        Des solutions de marketing face-to-face complètes pour maximiser l'impact de votre association.
+                        Une approche adaptée à chaque type d&apos;organisation, avec des résultats mesurables.
                     </p>
                 </div>
 
                 <div className={styles.grid}>
                     {services.map((service, index) => (
                         <div key={index} className={styles.card}>
-                            <div className={styles.cardGlow}></div>
-                            <div className={styles.cardContent}>
-                                <div className={styles.iconWrapper}>
-                                    <span className={styles.icon}>{service.icon}</span>
-                                </div>
+                            <div className={styles.cardHeader}>
                                 <h3 className={styles.cardTitle}>{service.title}</h3>
                                 <p className={styles.cardDescription}>{service.description}</p>
-                                <ul className={styles.featureList}>
-                                    {service.features.map((feature, idx) => (
-                                        <li key={idx} className={styles.featureItem}>
-                                            <span className={styles.checkmark}>→</span>
-                                            {feature}
-                                        </li>
-                                    ))}
-                                </ul>
                             </div>
-                            <div className={styles.cardFooter}>
-                                <a href="#contact" className={styles.learnMore}>
-                                    En savoir plus
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                        <path d="M5 12h14M12 5l7 7-7 7" />
-                                    </svg>
-                                </a>
+                            <ul className={styles.offeringsList}>
+                                {service.offerings.map((offering, idx) => (
+                                    <li key={idx}>
+                                        <span className={styles.bullet}>—</span>
+                                        {offering}
+                                    </li>
+                                ))}
+                            </ul>
+                            <div className={styles.cardResult}>
+                                <span className={styles.resultIcon}>📈</span>
+                                {service.result}
                             </div>
                         </div>
                     ))}
+                </div>
+
+                {/* Process Section */}
+                <div className={styles.processSection}>
+                    <h3 className={styles.processTitle}>Comment ça fonctionne</h3>
+                    <div className={styles.processSteps}>
+                        <div className={styles.step}>
+                            <span className={styles.stepNumber}>1</span>
+                            <strong>Échange initial</strong>
+                            <p>On discute de vos objectifs et de votre cible</p>
+                        </div>
+                        <div className={styles.stepArrow}>→</div>
+                        <div className={styles.step}>
+                            <span className={styles.stepNumber}>2</span>
+                            <strong>Préparation</strong>
+                            <p>Formation de l&apos;équipe et scripts personnalisés</p>
+                        </div>
+                        <div className={styles.stepArrow}>→</div>
+                        <div className={styles.step}>
+                            <span className={styles.stepNumber}>3</span>
+                            <strong>Déploiement</strong>
+                            <p>Campagne terrain avec suivi quotidien</p>
+                        </div>
+                        <div className={styles.stepArrow}>→</div>
+                        <div className={styles.step}>
+                            <span className={styles.stepNumber}>4</span>
+                            <strong>Résultats</strong>
+                            <p>Reporting complet et optimisation continue</p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* CTA */}
+                <div className={styles.cta}>
+                    <p className={styles.ctaText}>
+                        Vous avez un projet ? Discutons-en.
+                    </p>
+                    <Link href="/contact" className={styles.ctaButton}>
+                        Prendre contact
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </Link>
                 </div>
             </div>
         </section>

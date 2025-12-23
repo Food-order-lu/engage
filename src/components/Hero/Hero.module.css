@@ -218,8 +218,26 @@
     font-size: 1.15rem;
     color: #5A6A7A;
     line-height: 1.8;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
     max-width: 550px;
+}
+
+/* Client Types */
+.clientTypes {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.clientBadge {
+    padding: 8px 16px;
+    background: #FFFFFF;
+    border: 1px solid #E0E8EF;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #3A4A5A;
 }
 
 /* Buttons */
@@ -227,7 +245,22 @@
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
-    margin-bottom: 60px;
+    margin-bottom: 32px;
+}
+
+/* Trust Signals */
+.trustSignals {
+    padding-top: 24px;
+    border-top: 1px solid #E0E8EF;
+}
+
+.trustText {
+    font-size: 0.9rem;
+    color: #6B7A8F;
+}
+
+.trustText strong {
+    color: #00A651;
 }
 
 .btnPrimary {
