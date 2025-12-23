@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="engageGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00A651"/>
+      <stop offset="100%" stop-color="#1E88E5"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Circle Background -->
+  <circle cx="256" cy="256" r="240" fill="url(#engageGradient)"/>
+  
+  <!-- Handshake Icon -->
+  <g fill="white">
+    <!-- Left Hand -->
+    <path d="M120 280 
+             L170 240 
+             L200 250 
+             L230 230 
+             L256 250 
+             L256 280 
+             L200 320 
+             L160 310 
+             L120 320 
+             Z" 
+          fill="white" 
+          opacity="0.95"/>
+    
+    <!-- Right Hand -->
+    <path d="M392 280 
+             L342 240 
+             L312 250 
+             L282 230 
+             L256 250 
+             L256 280 
+             L312 320 
+             L352 310 
+             L392 320 
+             Z" 
+          fill="white" 
+          opacity="0.95"/>
+    
+    <!-- Connection/Handshake Center -->
+    <ellipse cx="256" cy="265" rx="45" ry="30" fill="white"/>
+    
+    <!-- Left Arm -->
+    <rect x="100" y="260" width="70" height="40" rx="20" fill="white"/>
+    
+    <!-- Right Arm -->
+    <rect x="342" y="260" width="70" height="40" rx="20" fill="white"/>
+    
+    <!-- Clasped Hands Detail -->
+    <path d="M220 250 Q256 220 292 250 Q256 280 220 250" fill="rgba(0,166,81,0.2)"/>
+  </g>
+</svg>
