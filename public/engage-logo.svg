@@ -7,49 +7,46 @@
     </linearGradient>
   </defs>
   
-  <!-- Circle Background -->
+  <!-- Circle Background with Gradient -->
   <circle cx="256" cy="256" r="240" fill="url(#engageGradient)"/>
   
-  <!-- Handshake Icon -->
-  <g fill="white">
-    <!-- Left Hand -->
-    <path d="M120 280 
-             L170 240 
-             L200 250 
-             L230 230 
-             L256 250 
-             L256 280 
-             L200 320 
-             L160 310 
-             L120 320 
-             Z" 
-          fill="white" 
-          opacity="0.95"/>
+  <!-- Handshake Symbol - Modern Abstract Style -->
+  <g transform="translate(256, 256)">
+    <!-- Left Hand/Arm -->
+    <path d="M-120 20 
+             C-120 20 -100 -30 -60 -30
+             L-20 -30
+             C-10 -30 0 -20 0 -10
+             L0 10
+             C0 20 -10 30 -20 30
+             L-60 30
+             C-100 30 -120 80 -120 80
+             L-140 60
+             C-140 60 -120 20 -120 20Z"
+          fill="white"/>
     
-    <!-- Right Hand -->
-    <path d="M392 280 
-             L342 240 
-             L312 250 
-             L282 230 
-             L256 250 
-             L256 280 
-             L312 320 
-             L352 310 
-             L392 320 
-             Z" 
-          fill="white" 
-          opacity="0.95"/>
+    <!-- Right Hand/Arm (mirrored) -->
+    <path d="M120 20 
+             C120 20 100 -30 60 -30
+             L20 -30
+             C10 -30 0 -20 0 -10
+             L0 10
+             C0 20 10 30 20 30
+             L60 30
+             C100 30 120 80 120 80
+             L140 60
+             C140 60 120 20 120 20Z"
+          fill="white"/>
     
-    <!-- Connection/Handshake Center -->
-    <ellipse cx="256" cy="265" rx="45" ry="30" fill="white"/>
+    <!-- Clasped Hands Center -->
+    <ellipse cx="0" cy="0" rx="35" ry="25" fill="white"/>
     
-    <!-- Left Arm -->
-    <rect x="100" y="260" width="70" height="40" rx="20" fill="white"/>
+    <!-- Hand Details - Fingers interlocking -->
+    <rect x="-50" y="-15" width="100" height="30" rx="15" fill="white"/>
     
-    <!-- Right Arm -->
-    <rect x="342" y="260" width="70" height="40" rx="20" fill="white"/>
-    
-    <!-- Clasped Hands Detail -->
-    <path d="M220 250 Q256 220 292 250 Q256 280 220 250" fill="rgba(0,166,81,0.2)"/>
+    <!-- Finger lines (subtle detail) -->
+    <line x1="-25" y1="-10" x2="-25" y2="10" stroke="url(#engageGradient)" stroke-width="2" opacity="0.3"/>
+    <line x1="0" y1="-12" x2="0" y2="12" stroke="url(#engageGradient)" stroke-width="2" opacity="0.3"/>
+    <line x1="25" y1="-10" x2="25" y2="10" stroke="url(#engageGradient)" stroke-width="2" opacity="0.3"/>
   </g>
 </svg>
