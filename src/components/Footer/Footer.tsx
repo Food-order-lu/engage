@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Logo from '@/components/Logo/Logo';
 import styles from './Footer.module.css';
 
 const Footer = () => {
@@ -13,8 +14,8 @@ const Footer = () => {
                 <div className={styles.top}>
                     {/* Brand & Contact Info */}
                     <div className={styles.brand}>
-                        <Link href="/" className={styles.logo}>
-                            <span className={styles.logoText}>Engage</span>
+                        <Link href="/" className={styles.logoLink}>
+                            <Logo size="medium" />
                         </Link>
                         <p className={styles.tagline}>
                             Agence de marketing face-to-face<br />

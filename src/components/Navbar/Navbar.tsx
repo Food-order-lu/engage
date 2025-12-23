@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Logo from '@/components/Logo/Logo';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
@@ -33,9 +34,8 @@ const Navbar = () => {
     return (
         <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
             <div className={styles.container}>
-                <Link href="/" className={styles.logo}>
-                    <span className={styles.logoText}>Engage</span>
-                    <span className={styles.logoSlogan}>face to face marketing</span>
+                <Link href="/" className={styles.logoLink}>
+                    <Logo size="small" />
                 </Link>
 
                 <div className={styles.navLinks}>
