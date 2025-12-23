@@ -10,7 +10,6 @@ const Hero = () => {
         <section id="accueil" className={styles.hero}>
             {/* Background Elements */}
             <div className={styles.bgGradient}></div>
-            <div className={styles.bgImage}></div>
             <div className={styles.bgOrbs}>
                 <div className={styles.orbGreen}></div>
                 <div className={styles.orbBlue}></div>
