@@ -4,6 +4,8 @@ import Link from 'next/link';
 import styles from './Hero.module.css';
 
 const Hero = () => {
+    const marqueeText = "ENGAGE • INSPIRE • CONNECT • IMPACT • ";
+
     return (
         <section id="accueil" className={styles.hero}>
             {/* Background Elements */}
@@ -13,6 +15,18 @@ const Hero = () => {
                 <div className={styles.orbBlue}></div>
             </div>
             <div className={styles.gridPattern}></div>
+
+            {/* Marquee Background */}
+            <div className={styles.marqueeTop}>
+                <div className={styles.marqueeTrack}>
+                    <span>{marqueeText}{marqueeText}{marqueeText}{marqueeText}</span>
+                </div>
+            </div>
+            <div className={styles.marqueeBottom}>
+                <div className={styles.marqueeTrackReverse}>
+                    <span>{marqueeText}{marqueeText}{marqueeText}{marqueeText}</span>
+                </div>
+            </div>
 
             {/* Hero Content */}
             <div className={styles.container}>

@@ -70,7 +70,7 @@ const WhyJoinUs = () => {
                         </div>
                         <div className={styles.profileItem}>
                             <span className={styles.checkIcon}>✓</span>
-                            <span>Envie de gagner bien</span>
+                            <span>Bonus sur performances</span>
                         </div>
                     </div>
                     <p className={styles.noExperience}>
