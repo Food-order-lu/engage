@@ -25,8 +25,19 @@
 }
 
 /* Logo */
-.logoLink {
+.logo {
     text-decoration: none;
+}
+
+.logoText {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #00A651 0%, #1E88E5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.5px;
 }
 
 .logoText {
