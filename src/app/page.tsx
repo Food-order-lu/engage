@@ -13,7 +13,6 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
-      <Partners />
       <Contact />
       <Footer />
     </main>
