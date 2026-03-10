@@ -77,7 +77,7 @@ const Footer = () => {
                 <div className={styles.bottom}>
                     <div className={styles.legal}>
                         <p className={styles.copyright}>
-                            © {currentYear} ENGAGE S.à r.l. — Société à responsabilité limitée inscrite au Luxembourg.
+                            © {currentYear} Engage Marketing. Tous droits réservés.
                         </p>
                         <p className={styles.legalLinks}>
                             <Link href="#">Mentions légales</Link>
