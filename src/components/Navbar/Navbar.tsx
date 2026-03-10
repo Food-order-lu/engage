@@ -21,7 +21,6 @@ const Navbar = () => {
         { href: '/', label: 'Accueil' },
         { href: '/about', label: 'À propos' },
         { href: '/services', label: 'Services' },
-        { href: '/partners', label: 'Partenaires' },
         { href: '/careers', label: 'Carrières' },
         { href: '/contact', label: 'Contact' },
     ];

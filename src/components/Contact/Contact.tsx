@@ -46,7 +46,7 @@ const Contact = () => {
                                 <div className={styles.cardIcon}>📍</div>
                                 <div className={styles.cardContent}>
                                     <h4>Adresse</h4>
-                                    <p>Luxembourg City, Luxembourg</p>
+                                    <p>7, rue Jean-Pierre Sauvage L-2514 Kirchberg</p>
                                 </div>
                             </div>
 
@@ -54,7 +54,7 @@ const Contact = () => {
                                 <div className={styles.cardIcon}>📧</div>
                                 <div className={styles.cardContent}>
                                     <h4>Email</h4>
-                                    <p>hello@engage.lu</p>
+                                    <p>operations@engage-marketing.lu</p>
                                 </div>
                             </div>
 

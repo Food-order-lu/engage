@@ -25,11 +25,11 @@ const Footer = () => {
                         <div className={styles.contactInfo}>
                             <div className={styles.contactItem}>
                                 <span className={styles.contactIcon}>📍</span>
-                                <span>Luxembourg City, Luxembourg</span>
+                                <span>7, rue Jean-Pierre Sauvage L-2514 Kirchberg</span>
                             </div>
                             <div className={styles.contactItem}>
                                 <span className={styles.contactIcon}>📧</span>
-                                <a href="mailto:hello@engage.lu">hello@engage.lu</a>
+                                <a href="mailto:operations@engage-marketing.lu">operations@engage-marketing.lu</a>
                             </div>
                         </div>
 
@@ -57,7 +57,6 @@ const Footer = () => {
                             <h4 className={styles.linkTitle}>Opportunités</h4>
                             <ul className={styles.linkList}>
                                 <li><Link href="/careers">Carrières</Link></li>
-                                <li><Link href="/partners">Partenaires</Link></li>
                             </ul>
                         </div>
                     </div>

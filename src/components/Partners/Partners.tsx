@@ -5,14 +5,14 @@ import styles from './Partners.module.css';
 const Partners = () => {
     // Placeholder partner names - can be replaced with actual logos later
     const partners = [
-        { name: 'UNICEF', color: '#00AEEF' },
-        { name: 'Croix-Rouge', color: '#ED1C24' },
-        { name: 'WWF', color: '#000000' },
-        { name: 'Médecins Sans Frontières', color: '#D92228' },
-        { name: 'Greenpeace', color: '#00A651' },
-        { name: 'Amnesty', color: '#FFFF00' },
-        { name: 'SOS Villages', color: '#E2001A' },
-        { name: 'Action Contre la Faim', color: '#E84E10' },
+        { name: 'Entreprise A', color: '#00AEEF' },
+        { name: 'Organisation B', color: '#ED1C24' },
+        { name: 'Société C', color: '#000000' },
+        { name: 'Client D', color: '#D92228' },
+        { name: 'Partenaire E', color: '#00A651' },
+        { name: 'Client F', color: '#FFFF00' },
+        { name: 'Organisation G', color: '#E2001A' },
+        { name: 'Entreprise H', color: '#E84E10' },
     ];
 
     const marqueeText = "AWESOME CLIENTS • AWESOME CLIENTS • AWESOME CLIENTS • AWESOME CLIENTS • AWESOME CLIENTS • AWESOME CLIENTS • ";
@@ -34,7 +34,7 @@ const Partners = () => {
                         Ils nous font <span className={styles.highlight}>confiance</span>
                     </h2>
                     <p className={styles.subtitle}>
-                        Nous travaillons avec les plus grandes associations pour créer un impact social réel.
+                        Nous collaborons avec diverses organisations pour créer un impact social réel.
                     </p>
                 </div>
 
@@ -60,18 +60,8 @@ const Partners = () => {
                 {/* Stats Row */}
                 <div className={styles.statsRow}>
                     <div className={styles.statItem}>
-                        <span className={styles.statValue}>50+</span>
-                        <span className={styles.statLabel}>Associations partenaires</span>
-                    </div>
-                    <div className={styles.statDivider}></div>
-                    <div className={styles.statItem}>
-                        <span className={styles.statValue}>1M+</span>
-                        <span className={styles.statLabel}>Personnes contactées</span>
-                    </div>
-                    <div className={styles.statDivider}></div>
-                    <div className={styles.statItem}>
-                        <span className={styles.statValue}>€5M+</span>
-                        <span className={styles.statLabel}>Levés pour les associations</span>
+                        <span className={styles.statValue}>Collecte</span>
+                        <span className={styles.statLabel}>Recrutement de donateurs</span>
                     </div>
                 </div>
             </div>
