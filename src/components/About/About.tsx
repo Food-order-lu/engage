@@ -90,11 +90,11 @@ const About = () => {
                         </blockquote>
                         <div className={styles.founderInfo}>
                             <div className={styles.founderAvatar}>
-                                <span>TR</span>
+                                <span>E</span>
                             </div>
                             <div>
-                                <strong className={styles.founderName}>Tiago Ribeiro</strong>
-                                <p className={styles.founderRole}>Fondateur, ENGAGE</p>
+                                <strong className={styles.founderName}>L&apos;Équipe</strong>
+                                <p className={styles.founderRole}>ENGAGE</p>
                             </div>
                         </div>
                     </div>
