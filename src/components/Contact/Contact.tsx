@@ -62,7 +62,7 @@ const Contact = () => {
                                 <div className={styles.cardIcon}>📞</div>
                                 <div className={styles.cardContent}>
                                     <h4>Téléphone</h4>
-                                    <p>+352 XX XXX XXX</p>
+                                    <p>+352 661 555 228</p>
                                 </div>
                             </div>
                         </div>
